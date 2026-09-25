@@ -1,0 +1,63 @@
+.world-bg { position: absolute; inset: 0; z-index: 0; }
+.world-bg svg { width: 100%; height: 100%; display: block; }
+
+/* Sumi character sizing rule (never object-fit: cover on Sumi) */
+.sumi-svg { width: 100%; height: auto; object-fit: contain; display: block; filter: drop-shadow(0 10px 14px rgba(0,0,0,0.2)); }
+
+#screen-play .stage { min-height: 220px; }
+#screen-play .sumi-wrap { width: min(48%, 200px); margin-bottom: 8px; }
+
+.session-summary { text-align: center; color: var(--snow); }
+.session-summary .big-score { font-size: 54px; font-weight: 800; font-family: var(--font-display); }
+
+/* Parent area: cleaner, information oriented */
+.parent-shell {
+  background: #F7F5FC;
+  border-radius: var(--radius-card);
+  min-height: 100%;
+  padding: var(--space-4);
+  flex: 1;
+  color: var(--ink);
+}
+.parent-shell h2 { color: var(--purple-700); }
+.gate-box {
+  background: var(--snow);
+  border-radius: var(--radius-card);
+  padding: var(--space-5);
+  text-align: center;
+  max-width: 380px;
+  margin: var(--space-6) auto;
+  box-shadow: var(--shadow-card);
+}
+.gate-box input {
+  width: 100%;
+  font-size: 22px;
+  text-align: center;
+  padding: 12px;
+  border-radius: var(--radius-button);
+  border: 2px solid var(--lavender);
+  margin: var(--space-3) 0;
+  font-family: var(--font-display);
+}
+
+.room-scene {
+  position: relative;
+  border-radius: var(--radius-card);
+  min-height: 280px;
+  overflow: hidden;
+  box-shadow: var(--shadow-card);
+  display: flex; align-items: flex-end; justify-content: center;
+  margin-bottom: var(--space-4);
+}
+.room-scene .sumi-wrap { width: min(50%, 210px); z-index: 3; }
+.bed-layer { position: absolute; bottom: 6%; z-index: 1; width: 46%; left: 50%; transform: translateX(-50%); }
+.bed-layer svg { width: 100%; }
+
+.adventure-path { position: relative; padding: var(--space-4) 0; }
+.adventure-path svg { width: 100%; height: auto; }
+.adventure-node {
+  cursor: pointer;
+}
+.adventure-node.locked { opacity: 0.45; }
+
+.category-scroll { display: flex; gap: var(--space-2); overflow-x: auto; padding-bottom: 4px; }

@@ -1,0 +1,49 @@
+:root {
+  /* Palette */
+  --purple-700: #4A3A8A;
+  --purple-500: #7A5FC4;
+  --purple-300: #A793E8;
+  --lavender: #D8CBF7;
+  --pink-500: #FF8FB3;
+  --pink-300: #FFC2D6;
+  --sky-500: #5EC0F0;
+  --sky-300: #BEE7FB;
+  --snow: #FFFFFF;
+  --snow-soft: #F6F3FF;
+  --orange-500: #FFA94D;
+  --orange-600: #F0862B;
+  --green-500: #6FCF97;
+  --green-600: #4EAF77;
+  --gold-500: #FFD166;
+  --ink: #352B5E;
+  --ink-soft: #6B6190;
+
+  --shadow-soft: 0 8px 24px rgba(74, 58, 138, 0.18);
+  --shadow-button: 0 6px 0 rgba(0, 0, 0, 0.15);
+  --shadow-button-pressed: 0 2px 0 rgba(0, 0, 0, 0.15);
+  --shadow-card: 0 10px 30px rgba(74, 58, 138, 0.14);
+
+  --radius-card: 28px;
+  --radius-button: 22px;
+  --radius-pill: 999px;
+
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 14px;
+  --space-4: 20px;
+  --space-5: 32px;
+  --space-6: 48px;
+
+  --font-display: 'Baloo 2', 'Fredoka', system-ui, sans-serif;
+  --font-body: 'Baloo 2', 'Fredoka', system-ui, sans-serif;
+
+  --safe-top: env(safe-area-inset-top, 0px);
+  --safe-bottom: env(safe-area-inset-bottom, 0px);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --snow-soft: #241C44;
+    --ink: #F1ECFF;
+  }
+}
